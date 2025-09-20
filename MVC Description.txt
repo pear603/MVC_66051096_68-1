@@ -1,5 +1,6 @@
 MVC Description
 Enviroment(Powershell)
+
 1. ติดตั้งenviroment python -m venv env
 2. ใช้คำสั่ง env\Scripts\activate
 3. ติดตั้ง libraries pip install -r requirements.txt
@@ -7,3 +8,27 @@ Enviroment(Powershell)
 5. ctrl+click link (http://127.0.0.1:5000)
 
 https://devhub.in.th/blog/flask-python
+
+ใช้ภาษา python ร่วมกับ html และ css ผ่าน Flask API
+ออกแบบตามคอนเซปต์ MVC ที่ประกอปไปด้วย Model View Controller ทำงานแยกหน้าที่กันชัดเจน
+Model มีหน้าที่ระบุ Business Logic สิ่งที่ระบบสามารถทำได้
+View มีหน้าที่แสดงผลการทำงาน
+Controller มีหน้าที่ควบคุมการทำงานระหว่าง View และ Model โดยจัดการกับ input ของผู้ใช้และนำไปใช้กับ Model ที่ระบุไว้ซึ่งนำผลลัพธ์ไปให้ View ใช้แสดงผล
+
+ซึ่งได้ทำการออกแบบตามโจทย์ที่อ้างอิงจาก MVC Architecture ดังนี้
+ส่วนของ View
+ใน templates folder มีไฟล์ html ที่แสดงผลตามที่ controller ส่งมาให้
+1.
+2.
+3.
+
+ส่วนของ Model
+ใน Model folder มีไฟล์ python ที่ระบุหน้าที่การทำงานที่ระบบสามารถทำได้
+1.
+2.
+3.
+
+ส่วนของ Controller 
+ใน Controller folder มีไฟล์ pythonที่มีหน้าที่เรียก Model มาใช้กับ input ของผู้ใช้และส่งให้ View แสดงผล ทำงานร่วมกับไฟล์หลักที่ใช้ run คือ app.py
+1.
+2. app.py เรียกการทำงานของ controller และตัดสินใจเรียกหน้าต่างที่จะแสดงผลให้ผู้ใช้ด้วยการ route URL
