@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>Pledge Stats</title>
+</head>
+<body>
+<h1>Pledge Statistics</h1>
+
+<p>Total successful pledges: {{ success_count }}</p>
+<p>Total rejected pledges: {{ rejected_count }}</p>
+
+<h2>All Pledges</h2>
+<table border="1" cellpadding="5">
+  <tr>
+    <th>User</th>
+    <th>Project</th>
+    <th>Amount</th>
+    <th>Status</th>
+    <th>Time</th>
+  </tr>
+  {% for pledge in pledges %}
+  <tr>
+    <td>{{ user_map[pledge.userId] }}</td>
+    <td>{{ project_map[pledge.projectId] }}</td>
+    <td>{{ pledge.amount }}</td>
+    <td>{{ pledge.status }}</td>
+    <td>{{ pledge.time }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+<a href="/">← Back to Projects</a>
+<a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>

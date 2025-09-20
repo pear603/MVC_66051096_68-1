@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <title>All Projects</title>
+</head>
+<body>
+<h1>All Projects</h1>
+
+<form method="get">
+    Category:
+    <select name="category">
+        <option value="">All</option>
+        {% for c in categories %}
+        <option value="{{c}}">{{c}}</option>
+        {% endfor %}
+    </select>
+
+    Sort by:
+    <select name="sort">
+        <option value="newest">Newest</option>
+        <option value="ending">Ending Soon</option>
+        <option value="most_funded">Most Funded</option>
+    </select>
+
+    <button type="submit">Apply</button>
+</form>
+
+<ul>
+    {% for p in projects %}
+    <li>
+        <a href="/project/{{p.projectId}}">{{p.name}}</a>
+        - Category: {{p.category}}
+        - Goal: {{p.targetAmount}}
+        - Raised: {{p.currentAmount}}
+    </li>
+    {% endfor %}
+</ul>
+<a href="{{ url_for('stats') }}">View Statistics</a>
+<a href="{{ url_for('logout') }}">Logout</a>
+
+</body>
+</html>

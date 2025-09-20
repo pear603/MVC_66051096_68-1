@@ -1,12 +1,37 @@
-/* body{
-    background-color: lightblue;
-    color: blue;
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 10px;
+    height: 25px;
 }
-h2{
+
+.progress {
+    height: 100%;
+    width: 0%; /* This will be dynamically set with Jinja {{progress}} */
     text-align: center;
-    background-color: lightgreen;
+    line-height: 25px;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px 0 0 15px;
+    transition: width 0.5s ease-in-out;
 }
-h1{
-    text-align: center;
-    background-color: lightgreen;
-} */
+
+.progress {
+    width: var(--progress-width);
+}
+
+/* Dynamic color based on progress */
+.progress[data-progress="low"] {
+    background-color: #e74c3c; /* red */
+}
+
+.progress[data-progress="medium"] {
+    background-color: #f1c40f; /* yellow */
+    color: #333;
+}
+
+.progress[data-progress="high"] {
+    background-color: #2ecc71; /* green */
+}

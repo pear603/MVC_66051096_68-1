@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <title>{{ project.name }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>{{ project.name }}</h1>
+    <p><strong>Category:</strong> {{ project.category }}</p>
+    <p><strong>Target Amount:</strong> {{ project.targetAmount }}</p>
+    <p><strong>Raised:</strong> {{ project.currentAmount }}</p>
+    <p><strong>Deadline:</strong> {{ project.deadline }}</p>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress" 
+     style="--progress-width: {{ progress }}%;" 
+     data-progress="{% if progress < 50 %}low{% elif progress < 80 %}medium{% else %}high{% endif %}">
+  {{ progress|round(2) }}%
+</div>
+    </div>
+
+    <h3>Reward Tiers</h3>
+    <ul>
+      {% for tier in reward_tiers if tier.projectId == project.projectId %}
+      <li>
+        {{ tier.name }} - Min: {{ tier.minAmount }} - Quota: {{ tier.quota }}
+      </li>
+      {% endfor %}
+    </ul>
+
+  <h3>Pledges</h3>
+<ul>
+  {% for pledge in project_pledges %}
+    <li>
+      User: {{ user_map[pledge.userId] }} |
+      Amount: {{ pledge.amount }} |
+      Status: {{ pledge.status }} |
+      Time: {{ pledge.time }}
+    </li>
+  {% else %}
+    <li>No pledges yet.</li>
+  {% endfor %}
+</ul>
+
+<script>
+function fetchPledges() {
+    fetch("/project/{{ project.projectId }}/pledges_api")
+        .then(res => res.json())
+        .then(data => {
+            const ul = document.getElementById("pledges-list");
+            ul.innerHTML = '';
+            data.forEach(p => {
+                const li = document.createElement('li');
+                li.innerText = `User: ${p.user} | Amount: ${p.amount} | Status: ${p.status} | Time: ${p.time}`;
+                ul.appendChild(li);
+            });
+        });
+}
+setInterval(fetchPledges, 1000);
+fetchPledges();
+</script>
+
+
+<form method="POST">
+  <label>Amount:</label>
+  <input type="number" name="amount" required min="1">
+
+  <label>Reward Tier (optional):</label>
+  <select name="tier_id">
+    <option value="">No tier</option>
+    {% for tier in reward_tiers %}
+      <option value="{{ tier.tierId }}">{{ tier.name }} (Min {{ tier.minAmount }}, Quota {{ tier.quota }})</option>
+    {% endfor %}
+  </select>
+
+  <button type="submit">Support Project</button>
+</form>
+
+    <a href="/">← Back to Projects</a>
+    <a href="{{ url_for('stats') }}">View Statistics</a>
+    <a href="{{ url_for('logout') }}">Logout</a>
+  </div>
+
+</body>
+</html>

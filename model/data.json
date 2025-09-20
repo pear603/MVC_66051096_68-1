@@ -1,0 +1,714 @@
+{
+  "users": [
+    {
+      "userId": "U001",
+      "username": "alice",
+      "password": "l8W0ymai"
+    },
+    {
+      "userId": "U002",
+      "username": "bob",
+      "password": "4DcAW4HX"
+    },
+    {
+      "userId": "U003",
+      "username": "charlie",
+      "password": "sr5JWBkD"
+    },
+    {
+      "userId": "U004",
+      "username": "diana",
+      "password": "VzDr5j9Z"
+    },
+    {
+      "userId": "U005",
+      "username": "edward",
+      "password": "xdSbuyHr"
+    },
+    {
+      "userId": "U006",
+      "username": "fiona",
+      "password": "uXvjjcPV"
+    },
+    {
+      "userId": "U007",
+      "username": "george",
+      "password": "xjl8orNm"
+    },
+    {
+      "userId": "U008",
+      "username": "hannah",
+      "password": "w2FiVIhZ"
+    },
+    {
+      "userId": "U009",
+      "username": "ian",
+      "password": "goFJkP6G"
+    },
+    {
+      "userId": "U010",
+      "username": "julia",
+      "password": "BC0JfJxM"
+    }
+  ],
+  "projects": [
+    {
+      "projectId": "41681090",
+      "name": "Project 7 in Art",
+      "category": "Art",
+      "targetAmount": 23690,
+      "deadline": "2025-12-09",
+      "currentAmount": 3000.0
+    },
+    {
+      "projectId": "69918845",
+      "name": "Project 4 in Technology",
+      "category": "Technology",
+      "targetAmount": 62580,
+      "deadline": "2025-11-29",
+      "currentAmount": 1000
+    },
+    {
+      "projectId": "91986602",
+      "name": "Project 6 in Environment",
+      "category": "Environment",
+      "targetAmount": 95897,
+      "deadline": "2025-11-24",
+      "currentAmount": 500
+    },
+    {
+      "projectId": "27260660",
+      "name": "Project 3 in Art",
+      "category": "Art",
+      "targetAmount": 64802,
+      "deadline": "2025-11-06",
+      "currentAmount": 1000
+    },
+    {
+      "projectId": "65193075",
+      "name": "Project 5 in Environment",
+      "category": "Environment",
+      "targetAmount": 55354,
+      "deadline": "2025-11-01",
+      "currentAmount": 1500.0
+    },
+    {
+      "projectId": "75382661",
+      "name": "Project 2 in Technology",
+      "category": "Technology",
+      "targetAmount": 68239,
+      "deadline": "2025-10-21",
+      "currentAmount": 5000.0
+    },
+    {
+      "projectId": "36146686",
+      "name": "Project 8 in Art",
+      "category": "Art",
+      "targetAmount": 50649,
+      "deadline": "2025-10-11",
+      "currentAmount": 3900.0
+    },
+    {
+      "projectId": "58849578",
+      "name": "Project 1 in Technology",
+      "category": "Technology",
+      "targetAmount": 34173,
+      "deadline": "2025-09-15",
+      "currentAmount": 2000
+    }
+  ],
+  "rewardTiers": [
+    {
+      "tierId": "RDAE80C",
+      "projectId": "58849578",
+      "name": "Reward 1 for Project 1 in Technology",
+      "minAmount": 500,
+      "quota": 6
+    },
+    {
+      "tierId": "RD278F6",
+      "projectId": "58849578",
+      "name": "Reward 2 for Project 1 in Technology",
+      "minAmount": 1000,
+      "quota": 11
+    },
+    {
+      "tierId": "R15C0EB",
+      "projectId": "75382661",
+      "name": "Reward 1 for Project 2 in Technology",
+      "minAmount": 500,
+      "quota": 14
+    },
+    {
+      "tierId": "RD5609A",
+      "projectId": "75382661",
+      "name": "Reward 2 for Project 2 in Technology",
+      "minAmount": 1000,
+      "quota": 18
+    },
+    {
+      "tierId": "RCDF1AA",
+      "projectId": "75382661",
+      "name": "Reward 3 for Project 2 in Technology",
+      "minAmount": 1500,
+      "quota": 18
+    },
+    {
+      "tierId": "RA45510",
+      "projectId": "27260660",
+      "name": "Reward 1 for Project 3 in Art",
+      "minAmount": 500,
+      "quota": 15
+    },
+    {
+      "tierId": "R37A461",
+      "projectId": "27260660",
+      "name": "Reward 2 for Project 3 in Art",
+      "minAmount": 1000,
+      "quota": 9
+    },
+    {
+      "tierId": "RE8AF1E",
+      "projectId": "27260660",
+      "name": "Reward 3 for Project 3 in Art",
+      "minAmount": 1500,
+      "quota": 19
+    },
+    {
+      "tierId": "R01A9F2",
+      "projectId": "69918845",
+      "name": "Reward 1 for Project 4 in Technology",
+      "minAmount": 500,
+      "quota": 15
+    },
+    {
+      "tierId": "RE20492",
+      "projectId": "69918845",
+      "name": "Reward 2 for Project 4 in Technology",
+      "minAmount": 1000,
+      "quota": 8
+    },
+    {
+      "tierId": "RDF4127",
+      "projectId": "65193075",
+      "name": "Reward 1 for Project 5 in Environment",
+      "minAmount": 500,
+      "quota": 16
+    },
+    {
+      "tierId": "R5BB785",
+      "projectId": "65193075",
+      "name": "Reward 2 for Project 5 in Environment",
+      "minAmount": 1000,
+      "quota": 16
+    },
+    {
+      "tierId": "RAD783D",
+      "projectId": "91986602",
+      "name": "Reward 1 for Project 6 in Environment",
+      "minAmount": 500,
+      "quota": 14
+    },
+    {
+      "tierId": "R1BD888",
+      "projectId": "91986602",
+      "name": "Reward 2 for Project 6 in Environment",
+      "minAmount": 1000,
+      "quota": 13
+    },
+    {
+      "tierId": "R868BA5",
+      "projectId": "91986602",
+      "name": "Reward 3 for Project 6 in Environment",
+      "minAmount": 1500,
+      "quota": 18
+    },
+    {
+      "tierId": "RE4D879",
+      "projectId": "41681090",
+      "name": "Reward 1 for Project 7 in Art",
+      "minAmount": 500,
+      "quota": 8
+    },
+    {
+      "tierId": "RB9D3C6",
+      "projectId": "41681090",
+      "name": "Reward 2 for Project 7 in Art",
+      "minAmount": 1000,
+      "quota": 16
+    },
+    {
+      "tierId": "R916A46",
+      "projectId": "41681090",
+      "name": "Reward 3 for Project 7 in Art",
+      "minAmount": 1500,
+      "quota": 7
+    },
+    {
+      "tierId": "R0D3387",
+      "projectId": "36146686",
+      "name": "Reward 1 for Project 8 in Art",
+      "minAmount": 500,
+      "quota": 14
+    },
+    {
+      "tierId": "RD0B1A4",
+      "projectId": "36146686",
+      "name": "Reward 2 for Project 8 in Art",
+      "minAmount": 1000,
+      "quota": 19
+    }
+  ],
+  "pledges": [
+    {
+      "pledgeId": "P086B03",
+      "userId": "U003",
+      "projectId": "91986602",
+      "amount": 500,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "RAD783D",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "PB169F2",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 1000,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "RD278F6",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "PD92534",
+      "userId": "U001",
+      "projectId": "36146686",
+      "amount": 400,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "R0D3387",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "P8F49CB",
+      "userId": "U003",
+      "projectId": "75382661",
+      "amount": 1000,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "RD5609A",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "P5893CA",
+      "userId": "U010",
+      "projectId": "41681090",
+      "amount": 400,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "RE4D879",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "P41A4B8",
+      "userId": "U004",
+      "projectId": "75382661",
+      "amount": 1500,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "RCDF1AA",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "P766475",
+      "userId": "U009",
+      "projectId": "27260660",
+      "amount": 1000,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "R37A461",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "P6698DF",
+      "userId": "U008",
+      "projectId": "75382661",
+      "amount": 500,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "R15C0EB",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "P35EA62",
+      "userId": "U005",
+      "projectId": "58849578",
+      "amount": 900,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "RD278F6",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "P6A7F77",
+      "userId": "U010",
+      "projectId": "27260660",
+      "amount": 900,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "R37A461",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "PF16F35",
+      "userId": "U009",
+      "projectId": "58849578",
+      "amount": 500,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "RDAE80C",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "P38F055",
+      "userId": "U004",
+      "projectId": "41681090",
+      "amount": 900,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "RB9D3C6",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "PAD0ABB",
+      "userId": "U010",
+      "projectId": "58849578",
+      "amount": 500,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "RDAE80C",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "P2BB6BC",
+      "userId": "U007",
+      "projectId": "75382661",
+      "amount": 400,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "R15C0EB",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "P2AD8DB",
+      "userId": "U003",
+      "projectId": "75382661",
+      "amount": 1500,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "RCDF1AA",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "PF8A3C7",
+      "userId": "U003",
+      "projectId": "36146686",
+      "amount": 400,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "R0D3387",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "P327E7F",
+      "userId": "U006",
+      "projectId": "69918845",
+      "amount": 1000,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "RE20492",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "P1E626E",
+      "userId": "U002",
+      "projectId": "41681090",
+      "amount": 1000,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "RB9D3C6",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "P3F4650",
+      "userId": "U010",
+      "projectId": "65193075",
+      "amount": 1000,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "R5BB785",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "PD4B964",
+      "userId": "U007",
+      "projectId": "41681090",
+      "amount": 1500,
+      "time": "2025-09-20T12:27:28",
+      "tierId": "R916A46",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "PD73521",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 500.0,
+      "time": "2025-09-20T12:28:52",
+      "tierId": "RDAE80C",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "P7BC8F8",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 500.0,
+      "time": "2025-09-20T12:29:13",
+      "tierId": "RDAE80C",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "P561B37",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 1000.0,
+      "time": "2025-09-20T12:29:51",
+      "tierId": "",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "PA0A19B",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 500.0,
+      "time": "2025-09-20T12:33:49",
+      "tierId": "RDAE80C",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "P769246",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 500.0,
+      "time": "2025-09-20T12:34:10",
+      "tierId": "RDAE80C",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "P5A0257",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 500.0,
+      "time": "2025-09-20T12:40:43",
+      "tierId": "RDAE80C",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "PB0A803",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 500.0,
+      "time": "2025-09-20T12:40:47",
+      "tierId": "",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "P5A8BC0",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 500.0,
+      "time": "2025-09-20T12:42:58",
+      "tierId": "RDAE80C",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "P9586EC",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 500.0,
+      "time": "2025-09-20T12:45:02",
+      "tierId": "",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "PF8576E",
+      "userId": "U004",
+      "projectId": "36146686",
+      "amount": 500.0,
+      "time": "2025-09-20T12:45:54",
+      "tierId": "R0D3387",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "P862FCB",
+      "userId": "U004",
+      "projectId": "36146686",
+      "amount": 500.0,
+      "time": "2025-09-20T12:47:02",
+      "tierId": "RD0B1A4",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "P3F1A85",
+      "userId": "U004",
+      "projectId": "36146686",
+      "amount": 1000.0,
+      "time": "2025-09-20T12:47:11",
+      "tierId": "RD0B1A4",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "P03CE78",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 500.0,
+      "time": "2025-09-20T12:47:26",
+      "tierId": "",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "PB34EE3",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 500.0,
+      "time": "2025-09-20T12:48:05",
+      "tierId": "",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "P314DB8",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 900.0,
+      "time": "2025-09-20T12:48:29",
+      "tierId": "",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "PF85058",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 500.0,
+      "time": "2025-09-20T12:49:41",
+      "tierId": "",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "PD3A239",
+      "userId": "U004",
+      "projectId": "36146686",
+      "amount": 1000.0,
+      "time": "2025-09-20T12:49:54",
+      "tierId": "R0D3387",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "P110FDB",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 500.0,
+      "time": "2025-09-20T12:54:40",
+      "tierId": "",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "P5D6C15",
+      "userId": "U004",
+      "projectId": "36146686",
+      "amount": 500.0,
+      "time": "2025-09-20T12:54:53",
+      "tierId": "R0D3387",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "P10CB82",
+      "userId": "U004",
+      "projectId": "65193075",
+      "amount": 500.0,
+      "time": "2025-09-20T12:55:06",
+      "tierId": "RDF4127",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "P2941C1",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 500.0,
+      "time": "2025-09-20T12:55:16",
+      "tierId": "",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "P22E4EA",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 500.0,
+      "time": "2025-09-20T12:56:52",
+      "tierId": "",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "PCA3DB1",
+      "userId": "U004",
+      "projectId": "75382661",
+      "amount": 500.0,
+      "time": "2025-09-20T12:57:05",
+      "tierId": "R15C0EB",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "PC5539E",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 500.0,
+      "time": "2025-09-20T12:59:00",
+      "tierId": "",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "P62D3CE",
+      "userId": "U004",
+      "projectId": "36146686",
+      "amount": 900.0,
+      "time": "2025-09-20T12:59:14",
+      "tierId": "R0D3387",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "PF40DE4",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 500.0,
+      "time": "2025-09-20T13:02:10",
+      "tierId": "",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "P70AD32",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 500.0,
+      "time": "2025-09-20T13:02:19",
+      "tierId": "",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "PB44077",
+      "userId": "U004",
+      "projectId": "58849578",
+      "amount": 500.0,
+      "time": "2025-09-20T13:06:23",
+      "tierId": "",
+      "status": "REJECTED"
+    },
+    {
+      "pledgeId": "PEA4978",
+      "userId": "U004",
+      "projectId": "41681090",
+      "amount": 500.0,
+      "time": "2025-09-20T13:07:04",
+      "tierId": "RE4D879",
+      "status": "SUCCESS"
+    },
+    {
+      "pledgeId": "PEC4314",
+      "userId": "U004",
+      "projectId": "75382661",
+      "amount": 200.0,
+      "time": "2025-09-20T13:10:42",
+      "tierId": "R15C0EB",
+      "status": "REJECTED"
+    }
+  ]
+}
